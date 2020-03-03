@@ -10,8 +10,8 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button submit;
-    EditText name, surname, age;
+    Button submit;//button
+    EditText name, surname, age;//fields
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +31,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(this, second_Activity.class);
-        intent.putExtra("send_name", name.getText().toString());
-        intent.putExtra("send_surname", surname.getText().toString());
+        intent.putExtra("send_name", name.getText().toString());//send name to 2nd activity
+        intent.putExtra("send_surname", surname.getText().toString());//send surname to 2nd activity
 
-        if((age.getText().toString()).equals(""))
+        //send age to 2nd activity
+        if((age.getText().toString()).equals(""))//if you didn't enter age
         {
             intent.putExtra("send_age", 0);
         }
