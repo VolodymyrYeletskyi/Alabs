@@ -33,16 +33,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, second_Activity.class);
         intent.putExtra("send_name", name.getText().toString());
         intent.putExtra("send_surname", surname.getText().toString());
-        int temp_age;
-        if((age.getText().toString()) == "")
+
+        if((age.getText().toString()).equals(""))
         {
-            temp_age = 0;
+            intent.putExtra("send_age", 0);
         }
         else
         {
-            temp_age = Integer.parseInt(age.getText().toString());
+            intent.putExtra("send_age", Integer.parseInt(age.getText().toString()));
         }
-        intent.putExtra("send_age", temp_age);
+
         startActivity(intent);
     }
 
