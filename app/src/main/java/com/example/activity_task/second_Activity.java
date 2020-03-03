@@ -14,10 +14,10 @@ public class second_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_);
 
-        text1.findViewById(R.id.textView1);
-        text2.findViewById(R.id.textView2);
+        text1 = findViewById(R.id.tv1);
+        text2 = findViewById(R.id.tv2);
 
-       /* Intent intent = getIntent();
+        Intent intent = getIntent();
 
         String name = intent.getStringExtra("send_name");
         String surname = intent.getStringExtra("send_surname");
@@ -32,6 +32,6 @@ public class second_Activity extends AppCompatActivity {
         else
         {
             text2.setText("Your age 18 or more, so you can watch our content");
-        }*/
+        }
     }
 }
