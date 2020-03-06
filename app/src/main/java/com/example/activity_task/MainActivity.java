@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         submit = findViewById(R.id.button);
-        name = findViewById(R.id.Name);
-        surname = findViewById(R.id.Surname);
-        age = findViewById(R.id.Age);
+        name = findViewById(R.id.name);
+        surname = findViewById(R.id.surname);
+        age = findViewById(R.id.age);
 
         submit.setOnClickListener(this);
 
@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, second_Activity.class);
         intent.putExtra("send_name", name.getText().toString());//send name to 2nd activity
         intent.putExtra("send_surname", surname.getText().toString());//send surname to 2nd activity
-
         //send age to 2nd activity
         if((age.getText().toString()).equals(""))//if you didn't enter age
         {
