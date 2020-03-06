@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/Name"
+        android:id="@+id/name"
         android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
@@ -15,12 +15,12 @@
         android:layout_marginEnd="144dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/Surname"
+        app:layout_constraintEnd_toStartOf="@+id/surname"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/HelloMessage" />
+        app:layout_constraintTop_toBottomOf="@id/helloMessage" />
 
     <EditText
-        android:id="@+id/Surname"
+        android:id="@+id/surname"
         android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
@@ -28,21 +28,21 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HelloMessage" />
+        app:layout_constraintTop_toBottomOf="@+id/helloMessage" />
 
     <EditText
-        android:id="@+id/Age"
+        android:id="@+id/age"
         android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="144dp"
         android:layout_marginTop="248dp"
         android:ems="10"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HelloMessage" />
+        app:layout_constraintTop_toBottomOf="@+id/helloMessage" />
 
 
     <TextView
-        android:id="@+id/HelloMessage"
+        android:id="@+id/helloMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -60,5 +60,5 @@
         android:layout_marginTop="148dp"
         android:text="Log In"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Age" />
+        app:layout_constraintTop_toBottomOf="@+id/age" />
 </androidx.constraintlayout.widget.ConstraintLayout>
